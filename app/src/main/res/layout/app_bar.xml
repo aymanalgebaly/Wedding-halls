@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_55sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar"
+    android:background="#110f28"
+    app:popupTheme="@style/PopupMenuStyle">
+
+
+    <Button
+        android:id="@+id/app_search"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/ic_search_black_24dp"/>
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الرئيسية"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        />
+
+
+</android.support.v7.widget.Toolbar>

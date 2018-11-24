@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.null_developer.etch.holl.null_developer.null_developer.etch.holl.DetailsActivity"
+    android:background="#2c2b3c">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp"/>
+
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:layout_below="@+id/viewPager"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:text="قصر الأفراح "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Profile_name"
+                android:textStyle="normal|bold"
+                android:textSize="@dimen/_23sdp"
+                android:textColor="#d1283e"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:text="السعه 1000 شخص"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:id="@+id/Profile_status"
+                android:textColor="#FFF"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp">
+
+                <Button
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/location"
+                    android:background="@drawable/ic_location_on_black_24dp"
+                    android:onClick="location"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"/>
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:text="المنصورة , الاستاد ,  بجوار استاد المنصورة"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal|bold"
+                    android:gravity="right|bottom"
+                    android:layout_gravity="right|top"
+                    android:paddingBottom="@dimen/_14sdp"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorline" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+                <Button
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/button"
+                    android:background="@drawable/ic_call_black_24dp"
+                    android:onClick="call" />
+
+                <Button
+                    android:id="@+id/details_message"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/ic_email_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_18sdp"/>
+
+
+                <TextView
+                    android:text="01095691592 "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textAlignment="textEnd"
+                    android:textColor="#aba8a8"
+                    android:textStyle="normal|bold"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorline" />
+
+
+
+            <TextView
+                android:text="التفاصيل :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:textColor="#fbd63c4b"
+                android:textSize="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_gravity="right"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:id="@+id/textView6"
+                android:text=" قاعة رائعة ومميزة تتسع لــ  ( 500 ) رجل فى صالة واسعة وفسيحة بالاضافة تتسع لــ ( 500 ) امرأة فى صالة جميلة وراقية تتناسب مع أرقى الأذواق كما بامكانكم طلب اضافات تجميل من ليلة فرحكم ذات طابع مختلف وجميل ،،   الصاله مجهزة بأحدث المعدات الصوتية والضوئية وتقدم أرقى وأفضل الخدمات لحفلات الزفاف أو الخطوبة"
+                android:textColor="#dfdfdf"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_17sdp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
